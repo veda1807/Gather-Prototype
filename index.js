@@ -7,9 +7,7 @@ let w= 500;
 let h= 500;
 
 //Function to move the avatar
-function move(e){
-
-    
+function move(e){ 
     if(e.keyCode==39){
         x+=5;
     }
@@ -36,7 +34,7 @@ function nearby() {
     var distance = Math.floor(Math.sqrt(Math.pow((obj["B"][0] - obj["A"][0]),2) + Math.pow((obj["B"][1] - obj["A"][1]),2) ))
 
     if (distance < 250) {
-        console.log("Avatar nearby turn on mic and video");
+        document.write("Nearby Avatar's should turn on their mic and videos");
     }
 }
 
